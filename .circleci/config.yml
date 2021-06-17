@@ -15,16 +15,16 @@ jobs:
     docker:
       - image: cimg/node:15.1
     steps:
-      -run:
-        name: Echo Command 12
-        command: echo "Hello"
+      - run:
+          name: Echo Command 12
+          command: echo "Hello"
   print_world:
     docker:
       - image: cimg/node:15.1
     steps:
-      -run:
-        name: Echo Command 23
-        command: echo "World"
+      - run:
+          name: Echo Command 23
+          command: echo "World"
   build-and-test:
     # These next lines define a Docker executor: https://circleci.com/docs/2.0/executor-types/
     # You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.

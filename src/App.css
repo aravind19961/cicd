@@ -1,38 +1,118 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+
+
+/* Navigation Bar CSS */
+.header{
+  width: 100%;
+  height: 5%;
+
+}
+.Navigation{
+  height: 100%;
+  font-size: 15px;
+  display: grid;
+  grid-template-columns: 25% repeat(5,15%);
+}
+.Navigation div{
+  background-color: gray;
+  color: whitesmoke;
   text-align: center;
+  padding-top:10px;
+}
+.Navigation .Topic{
+  font-weight: bold;
+  border: whitesmoke solid 4px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Navigation div:hover{
+  background-color: black;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* My App Content CSS */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.AppBody{
+  position: static;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  overflow: visible;
+  height: 100%;
+}
+
+/*SideBar */
+.Sidebar{
+ display: flex;
+  height: 94%;
+}
+
+.closeBar{
+  display: none;
+}
+.openBar{
+  background-color: cornflowerblue;
+  width: 200px;
+}
+
+
+
+.Sidebar .icon{
+
+  align-self: center;
+
+}
+
+.openBar li{
+  height: 40px;
+  text-align: center;
+  text-justify: distribute-center-last;
+  padding-top: 10px;
+
+}
+.openBar li:hover{
+  background-color: saddlebrown;
+}
+
+button{
+
+  top:50%;
+  height: 2%;
+}
+
+
+/* Footer Content*/
+
+.Footer{
+  position:fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: gray;
   color: white;
+  text-align: center;
+  padding-top: 10px;
+  height: 6%;
+
+
 }
 
-.App-link {
-  color: #61dafb;
+
+
+
+
+
+.DataTable{
+  padding-top: 20px;
+  padding-right: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.MyApp{
+  margin-top: 0;
+  height:100vh;
+  width: 100%;
+  background-color: snow;
+
 }
+

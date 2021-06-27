@@ -9,6 +9,10 @@ orbs:
   node: circleci/node@4.1
 commands:
   print_pipeline_id:
+    parameters:
+      to:
+        type: string
+        default: "Aravind Alluri"
     steps:
       - run:
           name: PipeLine echo
@@ -24,7 +28,8 @@ jobs:
           name: Echo Command 12
           command:
             - print_pipeline_id:
-            echo "Hello" > ~/output.txt
+                - to: "hello"
+            - echo "Hello" > ~/output.txt
 
       - persist_to_workspace:
           root: ~/

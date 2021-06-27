@@ -28,6 +28,12 @@ jobs:
           name: Echo Command 12
           command:
             echo "Hello" > ~/output.txt
+      - run:
+          shell: return -1
+      - run:
+          when: on_fail
+          command: checkout
+
       - print_pipeline_id:
           to : Aravind
       - persist_to_workspace:

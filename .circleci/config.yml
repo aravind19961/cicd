@@ -19,7 +19,7 @@ jobs:
           name: Echo Command 12
           command: echo "Hello" > output.txt
       - persist_to_workspace:
-          root: /tmp/workspace
+          root: /tmp
           paths:
             - /output.txt
   print_world:

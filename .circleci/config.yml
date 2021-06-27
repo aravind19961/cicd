@@ -17,9 +17,9 @@ jobs:
     steps:
       - run:
           name: Echo Command 12
-          command: echo "Hello" > output.txt
+          command: echo "Hello" > ~/output.txt
       - persist_to_workspace:
-          root: /tmp
+          root: ~/
           paths:
             - /output.txt
   print_world:

@@ -27,7 +27,7 @@ jobs:
       - image: cimg/node:15.1
     steps:
       - attach_workspace:
-          at: /tmp/workspace
+          at: ~/
       - run:
           name: Echo Command 23
           command: cat output.txt

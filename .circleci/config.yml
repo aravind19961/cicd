@@ -45,6 +45,9 @@ jobs:
       - run:
           name: Run Tests
           command: npm test
+      - run:
+          name: Pipeline ID
+          command: echo "This is my pipeline ID:" <<pipeline.id>>
 
 workflows:
   # Below is the definition of your workflow.

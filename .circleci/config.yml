@@ -18,10 +18,10 @@ jobs:
       - run:
           name: Echo Command 12
           command: echo "Hello" > output.txt
-      -persist_to_workspace:
-        root: /tmp/workspace
-        paths:
-          - output.txt
+      - persist_to_workspace:
+          root: /tmp/workspace
+          paths:
+            - output.txt
   print_world:
     docker:
       - image: cimg/node:15.1

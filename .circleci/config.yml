@@ -28,7 +28,8 @@ jobs:
           name: Echo Command 12
           command:
             - echo "Hello" > ~/output.txt
-      - print_pipeline_id
+      - print_pipeline_id:
+          - to : "Aravind"
       - persist_to_workspace:
           root: ~/
           paths:

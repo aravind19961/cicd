@@ -18,6 +18,7 @@ function Nav(){
             <div className="Navigation">
                 <div className="Topic">{Componet}</div>
                 <div>Home</div>
+                <div>Help</div>
                 <div>Employee Performance Stats</div>
                 <div>Attendence</div>
                 <div>Employee Usage</div>
